@@ -2,7 +2,7 @@
 Connect to your remote Azure development environment in a coulpe of commands.
 ### Instructions:
 1. Install Terraform and azure-cli on your local machine, login to your azure account through `az login`, to verify that login process ran as expected use the command `az account show`.
-2. Generate a public and a private RSA keys and put them in the `keys` directory (use "mtc-user-key" as the key name, else you need to change the key name in the 'main.tf' file)
+2. Generate a public and a private RSA keys (you can use the command: `ssh-keygen -t rsa`) and put them in the `keys` directory (use "mtc-user-key" as the key name, else you need to change the key name in the 'main.tf' file)
 3. Run `tf apply`
 > If you are using windows, change the host_os var in terraform.tfvars to "windows" and the local_username variable accordingly
 4. And that should be it! using [VSC Remote SSH extension](https://code.visualstudio.com/docs/remote/ssh-tutorial) select your newly create remote development environment:
