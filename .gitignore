@@ -1,0 +1,11 @@
+# RSA keys
+keys/**/*
+!keys/.gitkeep
+
+# State files
+*.tfstate
+*.tfstate.backup
+.terraform.tfstate.lock.info
+
+# Module directory
+.terraform/
